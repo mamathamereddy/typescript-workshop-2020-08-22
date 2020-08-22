@@ -8,7 +8,7 @@ interface User {
   lastName: string;
 }
 
-const UserList: FC<Props> = ({ users }) => {
+const UserList = ({ users }: Props) => {
   const [activeUser, setActiveUser] = useState<User>({
     firstName: "",
     lastName: "",

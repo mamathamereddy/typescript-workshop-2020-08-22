@@ -1,9 +1,4 @@
-import React, {
-    FunctionComponent,
-    useState,
-    FormEvent,
-    ChangeEvent,
-} from 'react'
+import React, { useState, FormEvent, ChangeEvent } from 'react'
 import ReactDOM from 'react-dom'
 
 interface Todo {
