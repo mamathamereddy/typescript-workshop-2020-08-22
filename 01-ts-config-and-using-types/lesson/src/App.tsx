@@ -2,8 +2,22 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-// todo define function to uppercase first letter
-// todo: show type inference between let and const
+const pets: any[] = ['dog', 6, undefined]
+
+const user = {
+    first: 'braedon',
+    last: 'gough',
+}
+
+const getUserName = (user: { first: string; last: string; age: number }) => {
+    return user.first + user.last
+}
+
+getUserName(user)
+
+const myName = 'braedon'
+let otherName = 'andrada'
+otherName = 7
 
 function App() {
     return (
