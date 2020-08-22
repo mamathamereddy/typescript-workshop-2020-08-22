@@ -19,7 +19,7 @@ interface Cat {
   favoriteNappingSpot: string
 }
 
-type Pet = Cat | Dog
+type Pet = //
 
 interface CatProps {
   cat: Cat
@@ -52,13 +52,7 @@ interface AppProps {
 const PetList = ({pets}: AppProps) => {
   return (
     <div style={{display: 'grid', gap: 10}}>
-      {pets.map((pet, index) => {
-        if ('name' in pet) {
-          return <Dog dog={pet} key={index} />
-        } else {
-          return <Cat cat={pet} key={index} />
-        }
-      })}
+      {/* solution goes here */})}
     </div>
   )
 }
