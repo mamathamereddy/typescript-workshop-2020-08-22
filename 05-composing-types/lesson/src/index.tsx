@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import App, { Button, Color } from './App'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
     <React.StrictMode>
-        <App firsName={4} />
+        <Button color={Color.GREEN}>COOL BUTTON</Button>
+        {/* <App firsName={4} /> */}
     </React.StrictMode>,
     document.getElementById('root')
 )
