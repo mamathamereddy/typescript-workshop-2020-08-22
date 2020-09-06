@@ -9,6 +9,8 @@ const user = {
 
 function App() {
   // const getUsername = * function definition goes here *
+   const getUserName = (firstName: string, lastName: string) =>
+   `${firstName} ${lastName}`
   return (
     <div className='App'>
       <header className='App-header'>
@@ -24,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-        <div>{/* user: {getUserName(user)} */}</div>
+        <div> user: {getUserName(user)}</div>
       </header>
     </div>
   )
